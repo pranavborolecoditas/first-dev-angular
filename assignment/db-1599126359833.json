@@ -1,0 +1,254 @@
+{
+  "clothes": [
+    {
+      "id": 0,
+      "productName": "Rustic Concrete Towels",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 1,
+      "productName": "Sleek Plastic Table",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 2,
+      "productName": "Small Fresh Cheese",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 3,
+      "productName": "Refined Steel Sausages",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 4,
+      "productName": "Generic Cotton Gloves",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 5,
+      "productName": "Licensed Rubber Fish",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 6,
+      "productName": "Awesome Metal Shoes",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 7,
+      "productName": "Sleek Metal Mouse",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 8,
+      "productName": "Unbranded Fresh Chips",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 9,
+      "productName": "Gorgeous Steel Keyboard",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 10,
+      "productName": "Tasty Cotton Chicken",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 11,
+      "productName": "Licensed Fresh Chips",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 12,
+      "productName": "Ergonomic Frozen Chair",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 13,
+      "productName": "Fantastic Wooden Car",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 14,
+      "productName": "Unbranded Soft Soap",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 15,
+      "productName": "Unbranded Frozen Chips",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 16,
+      "productName": "Generic Soft Chips",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 17,
+      "productName": "Licensed Metal Gloves",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 18,
+      "productName": "Sleek Steel Fish",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 19,
+      "productName": "Small Wooden Soap",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 20,
+      "productName": "Refined Concrete Soap",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 21,
+      "productName": "Refined Cotton Shoes",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 22,
+      "productName": "Fantastic Steel Fish",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 23,
+      "productName": "Awesome Wooden Chips",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 24,
+      "productName": "Ergonomic Metal Cheese",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 25,
+      "productName": "Awesome Wooden Pizza",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 26,
+      "productName": "Licensed Plastic Bike",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 27,
+      "productName": "Unbranded Frozen Bike",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 28,
+      "productName": "Unbranded Granite Salad",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 29,
+      "productName": "Tasty Rubber Ball",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 30,
+      "productName": "Refined Rubber Sausages",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 31,
+      "productName": "Licensed Wooden Sausages",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 32,
+      "productName": "Incredible Soft Chair",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 33,
+      "productName": "Awesome Fresh Chicken",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 34,
+      "productName": "Practical Rubber Mouse",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 35,
+      "productName": "Incredible Fresh Sausages",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 36,
+      "productName": "Sleek Frozen Computer",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 37,
+      "productName": "Handmade Soft Tuna",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 38,
+      "productName": "Rustic Concrete Fish",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 39,
+      "productName": "Tasty Metal Keyboard",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 40,
+      "productName": "Unbranded Steel Fish",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 41,
+      "productName": "Ergonomic Cotton Tuna",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 42,
+      "productName": "Ergonomic Granite Soap",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 43,
+      "productName": "Unbranded Granite Hat",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 44,
+      "productName": "Generic Steel Mouse",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 45,
+      "productName": "Handmade Plastic Fish",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 46,
+      "productName": "Unbranded Fresh Chicken",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 47,
+      "productName": "Unbranded Fresh Gloves",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 48,
+      "productName": "Unbranded Plastic Cheese",
+      "image": "http://placeimg.com/640/480/fashion"
+    },
+    {
+      "id": 49,
+      "productName": "Intelligent Metal Shirt",
+      "image": "http://placeimg.com/640/480/fashion"
+    }
+  ]
+}

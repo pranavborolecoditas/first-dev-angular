@@ -1,0 +1,304 @@
+{
+  "clothes": [
+    {
+      "id": 0,
+      "product": "Shoes",
+      "productDescription": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+      "productMaterial": "Soft"
+    },
+    {
+      "id": 1,
+      "product": "Salad",
+      "productDescription": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
+      "productMaterial": "Frozen"
+    },
+    {
+      "id": 2,
+      "product": "Keyboard",
+      "productDescription": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+      "productMaterial": "Granite"
+    },
+    {
+      "id": 3,
+      "product": "Mouse",
+      "productDescription": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+      "productMaterial": "Concrete"
+    },
+    {
+      "id": 4,
+      "product": "Shoes",
+      "productDescription": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+      "productMaterial": "Plastic"
+    },
+    {
+      "id": 5,
+      "product": "Gloves",
+      "productDescription": "The Football Is Good For Training And Recreational Purposes",
+      "productMaterial": "Rubber"
+    },
+    {
+      "id": 6,
+      "product": "Soap",
+      "productDescription": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+      "productMaterial": "Steel"
+    },
+    {
+      "id": 7,
+      "product": "Towels",
+      "productDescription": "The Football Is Good For Training And Recreational Purposes",
+      "productMaterial": "Granite"
+    },
+    {
+      "id": 8,
+      "product": "Soap",
+      "productDescription": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+      "productMaterial": "Concrete"
+    },
+    {
+      "id": 9,
+      "product": "Table",
+      "productDescription": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+      "productMaterial": "Plastic"
+    },
+    {
+      "id": 10,
+      "product": "Pants",
+      "productDescription": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
+      "productMaterial": "Rubber"
+    },
+    {
+      "id": 11,
+      "product": "Computer",
+      "productDescription": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+      "productMaterial": "Concrete"
+    },
+    {
+      "id": 12,
+      "product": "Soap",
+      "productDescription": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+      "productMaterial": "Frozen"
+    },
+    {
+      "id": 13,
+      "product": "Pants",
+      "productDescription": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+      "productMaterial": "Frozen"
+    },
+    {
+      "id": 14,
+      "product": "Keyboard",
+      "productDescription": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
+      "productMaterial": "Fresh"
+    },
+    {
+      "id": 15,
+      "product": "Gloves",
+      "productDescription": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+      "productMaterial": "Soft"
+    },
+    {
+      "id": 16,
+      "product": "Pizza",
+      "productDescription": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+      "productMaterial": "Rubber"
+    },
+    {
+      "id": 17,
+      "product": "Pizza",
+      "productDescription": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
+      "productMaterial": "Steel"
+    },
+    {
+      "id": 18,
+      "product": "Salad",
+      "productDescription": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
+      "productMaterial": "Wooden"
+    },
+    {
+      "id": 19,
+      "product": "Gloves",
+      "productDescription": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
+      "productMaterial": "Fresh"
+    },
+    {
+      "id": 20,
+      "product": "Chicken",
+      "productDescription": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+      "productMaterial": "Wooden"
+    },
+    {
+      "id": 21,
+      "product": "Keyboard",
+      "productDescription": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
+      "productMaterial": "Wooden"
+    },
+    {
+      "id": 22,
+      "product": "Soap",
+      "productDescription": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+      "productMaterial": "Soft"
+    },
+    {
+      "id": 23,
+      "product": "Cheese",
+      "productDescription": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+      "productMaterial": "Steel"
+    },
+    {
+      "id": 24,
+      "product": "Chips",
+      "productDescription": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+      "productMaterial": "Concrete"
+    },
+    {
+      "id": 25,
+      "product": "Chair",
+      "productDescription": "The Football Is Good For Training And Recreational Purposes",
+      "productMaterial": "Plastic"
+    },
+    {
+      "id": 26,
+      "product": "Pants",
+      "productDescription": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+      "productMaterial": "Fresh"
+    },
+    {
+      "id": 27,
+      "product": "Pizza",
+      "productDescription": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
+      "productMaterial": "Soft"
+    },
+    {
+      "id": 28,
+      "product": "Chicken",
+      "productDescription": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+      "productMaterial": "Wooden"
+    },
+    {
+      "id": 29,
+      "product": "Mouse",
+      "productDescription": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+      "productMaterial": "Concrete"
+    },
+    {
+      "id": 30,
+      "product": "Bike",
+      "productDescription": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+      "productMaterial": "Steel"
+    },
+    {
+      "id": 31,
+      "product": "Car",
+      "productDescription": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+      "productMaterial": "Wooden"
+    },
+    {
+      "id": 32,
+      "product": "Chair",
+      "productDescription": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+      "productMaterial": "Soft"
+    },
+    {
+      "id": 33,
+      "product": "Bike",
+      "productDescription": "The Football Is Good For Training And Recreational Purposes",
+      "productMaterial": "Fresh"
+    },
+    {
+      "id": 34,
+      "product": "Fish",
+      "productDescription": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+      "productMaterial": "Fresh"
+    },
+    {
+      "id": 35,
+      "product": "Table",
+      "productDescription": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
+      "productMaterial": "Frozen"
+    },
+    {
+      "id": 36,
+      "product": "Soap",
+      "productDescription": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+      "productMaterial": "Plastic"
+    },
+    {
+      "id": 37,
+      "product": "Cheese",
+      "productDescription": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
+      "productMaterial": "Steel"
+    },
+    {
+      "id": 38,
+      "product": "Hat",
+      "productDescription": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
+      "productMaterial": "Steel"
+    },
+    {
+      "id": 39,
+      "product": "Gloves",
+      "productDescription": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
+      "productMaterial": "Metal"
+    },
+    {
+      "id": 40,
+      "product": "Sausages",
+      "productDescription": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
+      "productMaterial": "Fresh"
+    },
+    {
+      "id": 41,
+      "product": "Computer",
+      "productDescription": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+      "productMaterial": "Fresh"
+    },
+    {
+      "id": 42,
+      "product": "Bacon",
+      "productDescription": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
+      "productMaterial": "Granite"
+    },
+    {
+      "id": 43,
+      "product": "Chicken",
+      "productDescription": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
+      "productMaterial": "Granite"
+    },
+    {
+      "id": 44,
+      "product": "Cheese",
+      "productDescription": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+      "productMaterial": "Steel"
+    },
+    {
+      "id": 45,
+      "product": "Chips",
+      "productDescription": "The Football Is Good For Training And Recreational Purposes",
+      "productMaterial": "Metal"
+    },
+    {
+      "id": 46,
+      "product": "Computer",
+      "productDescription": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+      "productMaterial": "Soft"
+    },
+    {
+      "id": 47,
+      "product": "Bacon",
+      "productDescription": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+      "productMaterial": "Granite"
+    },
+    {
+      "id": 48,
+      "product": "Computer",
+      "productDescription": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+      "productMaterial": "Metal"
+    },
+    {
+      "id": 49,
+      "product": "Bacon",
+      "productDescription": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
+      "productMaterial": "Fresh"
+    }
+  ]
+}
