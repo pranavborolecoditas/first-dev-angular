@@ -6,11 +6,13 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import {
   AuthGuardService as AuthGuard
 } from './shared/services/auth-guard.service';
+import { ClothesFormComponent } from './clothes-form/clothes-form.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent, canActivate: [AuthGuard]  },
+  { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
-  { path: '',   redirectTo: 'login', pathMatch: 'full' }, // redirect to `first-component`
+  { path: 'create-product', component: ClothesFormComponent, canActivate: [AuthGuard] },
+  { path: '',   redirectTo: 'home', pathMatch: 'full' }, // redirect to `first-component`
   { path: '**', component: PageNotFoundComponent },
 ];
 

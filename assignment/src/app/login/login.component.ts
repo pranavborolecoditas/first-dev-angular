@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { AuthService } from '../shared/services/auth.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -15,7 +16,8 @@ export class LoginComponent implements OnInit {
 
     constructor(
         private formBuilder: FormBuilder,
-        private router: Router
+        private router: Router,
+        public auth: AuthService
     ) {
         // redirect to home if already logged in
         // if (this.authenticationService.currentUserValue) {
@@ -24,13 +26,15 @@ export class LoginComponent implements OnInit {
     }
 
     ngOnInit() {
+      const isAuthenticated = this.auth.isAuthenticated();
+      if (isAuthenticated) {
+        this.router.navigate(['/home']);
+      } else {
         this.loginForm = this.formBuilder.group({
             username: ['', Validators.required],
             password: ['', Validators.required]
         });
-
-        // get return url from route parameters or default to '/'
-        // this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
+      }
     }
 
     onSubmit() {

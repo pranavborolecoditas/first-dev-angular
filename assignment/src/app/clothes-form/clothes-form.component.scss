@@ -1,0 +1,69 @@
+.sport-data-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .sport-data-header {
+    height: 50px;
+    padding: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .sport-data-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .sport-data-inputs {
+      height: 450px;
+      width: 350px;
+      form {
+        height: unset !important;
+      }
+      .sport-data-header {
+        text-align: center;
+        height: 20%;
+        display: flex;
+        padding-bottom: 20px;
+        flex-direction: column-reverse;
+      }
+      .sport-data-body {
+        //  height: 80%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        .form-input {
+          padding: 15px;
+          display: flex;
+          flex-direction: column;
+          label {
+            padding-bottom: 10px;
+          }
+          input {
+            padding: 8px;
+            display: block;
+            border: none;
+            width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+          }
+        }
+        .btn-input {
+          display: flex;
+          justify-content: space-evenly;
+          padding: 10px;
+          width: 80%;
+        }
+      }
+    }
+    form {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
