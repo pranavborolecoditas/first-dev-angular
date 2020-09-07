@@ -2,8 +2,8 @@
 <div class="toolbar" role="banner">
     <h2 routerLink="/home">Clothes</h2>
     <div class="spacer"></div>
-    <div *ngIf="isAuthenticated;else other_content">
-      <div><span>Logout</span></div>
+    <div *ngIf="isAuthenticated | async;else other_content">
+      <div (click)="onLogout()"><span>Logout</span></div>
   </div>
 
   <ng-template #other_content><div><span routerLink="/login">Login</span></div></ng-template>

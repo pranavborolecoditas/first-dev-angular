@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { Store, select } from '@ngrx/store';
+import { changeUserLoggedinState } from '../state/user.actions';
 import { AuthService } from '../shared/services/auth.service';
 @Component({
   selector: 'app-login',
@@ -17,7 +19,8 @@ export class LoginComponent implements OnInit {
     constructor(
         private formBuilder: FormBuilder,
         private router: Router,
-        public auth: AuthService
+        public auth: AuthService,
+        private store: Store<{ isLogin: boolean }>
     ) {
         // redirect to home if already logged in
         // if (this.authenticationService.currentUserValue) {
@@ -40,6 +43,7 @@ export class LoginComponent implements OnInit {
     onSubmit() {
       if (this.loginForm.value.username === 'admin' || this.loginForm.value.password === 'admin') {
         window.localStorage.setItem('loginSuccess', JSON.stringify(true));
+        this.store.dispatch(changeUserLoggedinState());
         this.router.navigate(['/home']);
       }
     }

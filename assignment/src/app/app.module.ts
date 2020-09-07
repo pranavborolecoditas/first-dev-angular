@@ -13,6 +13,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthGuardService } from './shared/services/auth-guard.service';
 import { AuthService } from './shared/services/auth.service';
 import { ClothesFormComponent } from './clothes-form/clothes-form.component';
+import { userReducer } from './state/user.reducer';
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { ClothesFormComponent } from './clothes-form/clothes-form.component';
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    StoreModule.forRoot({user:userReducer}),
   ],
   exports: [
     FormsModule,
