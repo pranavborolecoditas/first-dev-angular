@@ -1,16 +1,16 @@
 <div class="content">
   <div class="home-header">
     <h2>Product</h2>
-    <custom-button buttonName="Create" *ngIf="isAuthenticated | async" (click)="onCreate()"></custom-button>
+    <custom-button buttonName="Create" className="custom-button" *ngIf="isAuthenticated | async" (click)="onCreate()"></custom-button>
   </div>
   <div class="card-container">
     <div *ngFor="let cloth of clothes" class="card">
       <div>Cloth Name: {{cloth.product}}</div>
       <div>Cloth Material: {{cloth.productMaterial}}</div>
       <div class="button-area">
-        <custom-button buttonName="Edit" *ngIf="isAuthenticated | async" (click)="onEdit(cloth.id)">
+        <custom-button buttonName="Edit" className="custom-button" *ngIf="isAuthenticated | async" (click)="onEdit(cloth.id)">
         </custom-button>
-        <custom-button buttonName="Delete" *ngIf="isAuthenticated | async" (click)="onDelete(cloth.id)">
+        <custom-button buttonName="Delete" className="danger-button" *ngIf="isAuthenticated | async" (click)="onDelete(cloth.id)">
         </custom-button>
       </div>
     </div>
