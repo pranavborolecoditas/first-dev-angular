@@ -47,7 +47,7 @@ export class CustomButton extends LitElement {
       }
       constructor() {
         super();
-        this.buttonName = 'demo';
+        this.buttonName = 'button';
         // this.stateName = '';
       }
       render() {
