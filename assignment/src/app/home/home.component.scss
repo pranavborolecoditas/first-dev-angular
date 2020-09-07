@@ -28,6 +28,11 @@ h6 {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 16px;
+  .button-area {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
 }
 
 .card {
@@ -76,6 +81,12 @@ h6 {
   width: auto;
   min-width: 30%;
   position: relative;
+}
+
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .card.card.highlight-card span {

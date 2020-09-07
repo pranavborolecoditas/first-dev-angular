@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Store, select } from '@ngrx/store';
+import { Observable } from 'rxjs';
+import { Router } from '@angular/router';
 import { HomeService } from './home.service';
+import { ClothesFormService } from '../clothes-form/clothes-form.service';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +12,15 @@ import { HomeService } from './home.service';
 })
 export class HomeComponent implements OnInit {
   public clothes: any;
-  constructor(private homeService: HomeService) { }
+  isAuthenticated: Observable<boolean>
+  constructor(
+    private homeService: HomeService,
+    private store: Store<{ user: boolean }>,
+    private router: Router,
+    private clothService: ClothesFormService,
+  ) {
+    this.isAuthenticated = store.pipe(select('user'));
+  }
 
   ngOnInit(): void {
     this.getClothesList();
@@ -20,4 +32,17 @@ export class HomeComponent implements OnInit {
     })
   }
 
+  onCreate() {
+    this.router.navigate(['create-product'])
+  }
+
+  onEdit(id) {
+    this.router.navigate(['edit-product', id])
+  }
+
+  onDelete(id) {
+    this.clothService.deleteCloth(id).subscribe(res => {
+      this.getClothesList();
+    })
+  }
 }

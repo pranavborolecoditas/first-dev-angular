@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'create-product', component: ClothesFormComponent, canActivate: [AuthGuard] },
+  { path: 'edit-product/:id', component: ClothesFormComponent, canActivate: [AuthGuard] },
   { path: '',   redirectTo: 'home', pathMatch: 'full' }, // redirect to `first-component`
   { path: '**', component: PageNotFoundComponent },
 ];
