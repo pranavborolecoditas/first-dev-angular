@@ -8,4 +8,8 @@ export class AuthService {
     const token = JSON.parse(localStorage.getItem('loginSuccess'));
     return token;
   }
+
+  public logout(): void {
+    window.localStorage.setItem('loginSuccess', JSON.stringify(null));
+  }
 }

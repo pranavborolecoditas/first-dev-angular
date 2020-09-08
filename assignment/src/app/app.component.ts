@@ -15,12 +15,11 @@ export class AppComponent implements OnInit {
     this.isAuthenticated = store.pipe(select('user'));
   }
   ngOnInit() {
-    window.localStorage.setItem('loginSuccess', JSON.stringify(true));
     this.store.dispatch(changeUserLoggedinState());
   }
 
   onLogout() {
-    window.localStorage.setItem('loginSuccess', JSON.stringify(null));
+    this.auth.logout();
     this.store.dispatch(changeUserLoggedinState());
   }
   title = 'Assignment';
