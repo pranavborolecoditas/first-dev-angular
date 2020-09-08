@@ -17,16 +17,16 @@ export class ClothesFormComponent implements OnInit, OnDestroy {
   private routeSub: Subscription;
 
   constructor(
-      private route: ActivatedRoute,
-      private clothService: ClothesFormService,
-      private formBuilder:
-      FormBuilder,private router: Router
+    private route: ActivatedRoute,
+    private clothService: ClothesFormService,
+    private formBuilder: FormBuilder, 
+    private router: Router
   ) { }
 
   ngOnInit(): void {
     this.routeSub = this.route.params.subscribe(params => {
       this.clothId = params.id;
-      if(this.clothId) {
+      if (this.clothId) {
         this.getCloth(this.clothId);
       } else {
         this.clothesForm = this.formBuilder.group({
@@ -39,15 +39,15 @@ export class ClothesFormComponent implements OnInit, OnDestroy {
 
   getCloth(id) {
     this.clothService.getCloth(id).subscribe(res => {
-      this.clothesForm = new FormGroup({ 
+      this.clothesForm = new FormGroup({
         product: new FormControl(res['product']),
-        productMaterial: new FormControl(res['productMaterial']) 
-     });
+        productMaterial: new FormControl(res['productMaterial'])
+      });
     })
   }
 
   onSubmit() {
-    if(this.clothId) {
+    if (this.clothId) {
       this.clothService.editCloth(this.clothesForm.value, this.clothId).subscribe(res => {
         console.log(res);
         this.router.navigate(['/home']);
@@ -58,10 +58,10 @@ export class ClothesFormComponent implements OnInit, OnDestroy {
         this.router.navigate(['/home']);
       })
     }
-    
+
   }
 
-  redirectToHome(){
+  redirectToHome() {
     this.router.navigate(['home']);
   }
 

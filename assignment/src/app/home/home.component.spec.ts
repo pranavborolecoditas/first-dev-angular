@@ -6,20 +6,30 @@ describe('HomeComponent', () => {
   let component: HomeComponent;
   let fixture: ComponentFixture<HomeComponent>;
 
+  let homeServiceMock;
+  let storeMock,
+    routerMock,
+    clothServiceMock;
+
   beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ HomeComponent ]
-    })
-    .compileComponents();
+    component = new HomeComponent(
+      homeServiceMock,
+      storeMock,
+      routerMock,
+      clothServiceMock,
+    );
   });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(HomeComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+  describe( 'Setup component', () => {
+		describe( 'ngOnInit', () => {
+			it( 'should call getClothesList', () => {
+				const getClothesListSpy = jest.spyOn( component, 'getClothesList' );
+				
+				component.ngOnInit();
+				
+				expect( getClothesListSpy ).toBeCalledWith( component );
+			});
+		});
+	});
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
 });
