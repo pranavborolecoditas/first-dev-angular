@@ -5,9 +5,11 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
 import {CustomButton} from './app/shared/custom-component/custom-button';
+import {ToggleSwitch} from './app/shared/custom-component/toggle-switch';
 
 
 customElements.define('custom-button', CustomButton);
+customElements.define('toggle-switch', ToggleSwitch);
 
 if (environment.production) {
   enableProdMode();
