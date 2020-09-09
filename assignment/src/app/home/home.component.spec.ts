@@ -1,35 +1,37 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { HomeComponent } from './home.component';
+import { HomeComponent } from "./home.component";
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
-  let fixture: ComponentFixture<HomeComponent>;
-
-  let homeServiceMock;
-  let storeMock,
-    routerMock,
-    clothServiceMock;
-
-  beforeEach(async () => {
-    component = new HomeComponent(
-      homeServiceMock,
-      storeMock,
-      routerMock,
-      clothServiceMock,
-    );
+	let homeServiceMock: any;
+	let clothServiceMock: any;
+	let routerMock: any;
+  let storeMock: any;
+  
+  beforeEach(() => {
+		homeServiceMock = {
+      getList: jest.fn()
+		};
+		clothServiceMock = {
+      createCloth: jest.fn(),
+			editCloth: jest.fn(),
+			deleteCloth: jest.fn(),
+			getCloth: jest.fn(),
+		};
+		routerMock = jest.fn();
+		component = new HomeComponent(
+			homeServiceMock,
+			routerMock,
+			storeMock,
+			clothServiceMock,
+		);
+		component.ngOnInit();
   });
-
-  describe( 'Setup component', () => {
-		describe( 'ngOnInit', () => {
-			it( 'should call getClothesList', () => {
-				const getClothesListSpy = jest.spyOn( component, 'getClothesList' );
-				
-				component.ngOnInit();
-				
-				expect( getClothesListSpy ).toBeCalledWith( component );
-			});
+  
+  describe('Test: ngOnInit', () => {
+		it('should call this.getClothesList()', () => {
+      
+			expect(component.loginForm.value).toEqual(loginForm);
 		});
-	});
-
+  });
+  
 });

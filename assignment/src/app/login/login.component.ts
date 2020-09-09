@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { Store, select } from '@ngrx/store';
+import { Store } from '@ngrx/store';
 import { changeUserLoggedinState } from '../state/user.actions';
 import { AuthService } from '../shared/services/auth.service';
 @Component({
@@ -29,22 +29,23 @@ export class LoginComponent implements OnInit {
     }
 
     ngOnInit() {
+      this.loginForm = this.formBuilder.group({
+        username: ['', Validators.required],
+        password: ['', Validators.required]
+      });
       const isAuthenticated = this.auth.isAuthenticated();
       if (isAuthenticated) {
         this.router.navigate(['/home']);
-      } else {
-        this.loginForm = this.formBuilder.group({
-            username: ['', Validators.required],
-            password: ['', Validators.required]
-        });
       }
     }
 
     onSubmit() {
-      if (this.loginForm.value.username === 'admin' || this.loginForm.value.password === 'admin') {
-        window.localStorage.setItem('loginSuccess', JSON.stringify(true));
-        this.store.dispatch(changeUserLoggedinState());
-        this.router.navigate(['/home']);
+      if (this.loginForm.dirty && this.loginForm.valid) {
+        if (this.auth.login(this.loginForm.value)) {
+          window.localStorage.setItem('loginSuccess', JSON.stringify(true));
+          this.store.dispatch(changeUserLoggedinState());
+          this.router.navigate(['/home']);
+        } 
       }
     }
 
