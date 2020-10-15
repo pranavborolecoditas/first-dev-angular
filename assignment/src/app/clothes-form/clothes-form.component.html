@@ -5,18 +5,19 @@
 <div class="clothes-data-form">
   <div class="clothes-data-inputs">
     <form [formGroup]="clothesForm" (ngSubmit)="onSubmit()">
-    <div class="clothes-data-body">
-      <div class="form-input">
-        <label for="product"><b>Product Name </b></label>
-        <input type="text" formControlName="product" placeholder="Enter Product Name" name="product" required>
-      </div>
-      <div class="form-input">
-        <label for="productMaterial"><b>Product Material </b></label>
-        <input type="text" formControlName="productMaterial" placeholder="Enter Product Material" name="productMaterial" required>
-      </div>
-      <div class="btn-input">
-      <button type="submit">Submit</button>
-      <button type="button" (click)="redirectToHome()" class="cancelbtn">Cancel</button>
+      <div class="clothes-data-body">
+        <label class="error-message" *ngIf="errorMessage">{{errorMessage}}</label>
+        <div class="form-input">
+          <label for="product"><b>Product Name* </b></label>
+          <input type="text" formControlName="product" placeholder="Enter Product Name" name="product" required>
+        </div>
+        <div class="form-input">
+          <label for="productMaterial"><b>Product Material* </b></label>
+          <input type="text" formControlName="productMaterial" placeholder="Enter Product Material" name="productMaterial" required>
+        </div>
+        <div class="btn-input">
+        <button type="submit" class="custom-button">Submit</button>
+        <button type="button" (click)="redirectToHome()" class="cancelbtn">Cancel</button>
       </div>
     </div>
   </form>

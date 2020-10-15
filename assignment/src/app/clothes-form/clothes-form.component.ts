@@ -14,6 +14,7 @@ export class ClothesFormComponent implements OnInit, OnDestroy {
   clothesForm: FormGroup;
   submitted = false;
   clothId: any;
+  errorMessage = null;
   private routeSub: Subscription;
 
   constructor(
@@ -47,18 +48,20 @@ export class ClothesFormComponent implements OnInit, OnDestroy {
   }
 
   onSubmit() {
-    if (this.clothId) {
-      this.clothService.editCloth(this.clothesForm.value, this.clothId).subscribe(res => {
-        console.log(res);
-        this.router.navigate(['/home']);
-      })
+    console.log(this.clothesForm.value);
+    if(this.clothesForm.value.product && this.clothesForm.value.productMaterial) {
+      if (this.clothId) {
+        this.clothService.editCloth(this.clothesForm.value, this.clothId).subscribe(res => {
+          this.router.navigate(['/home']);
+        })
+      } else {
+        this.clothService.createCloth(this.clothesForm.value).subscribe(res => {
+          this.router.navigate(['/home']);
+        })
+      } 
     } else {
-      this.clothService.createCloth(this.clothesForm.value).subscribe(res => {
-        console.log(res);
-        this.router.navigate(['/home']);
-      })
+        this.errorMessage = 'All Fields are mandatory'
     }
-
   }
 
   redirectToHome() {

@@ -41,8 +41,11 @@ export class HomeComponent implements OnInit {
   }
 
   onDelete(id) {
-    this.clothService.deleteCloth(id).subscribe(res => {
-      this.getClothesList();
-    })
+    const confirmAlert = confirm("Are you sure, you want to delete Product?");
+    if (confirmAlert == true) {
+      this.clothService.deleteCloth(id).subscribe(res => {
+        this.getClothesList();
+      })
+    }
   }
 }

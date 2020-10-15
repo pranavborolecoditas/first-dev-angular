@@ -17,6 +17,7 @@ export class ToggleSwitch extends LitElement {
         :host{
             display:flex;
             align-items:center;
+            
         }
         .state-name{
             margin-right:8px;
@@ -29,6 +30,7 @@ export class ToggleSwitch extends LitElement {
             border-radius: 15px;
             display: inline-block;
             position: relative;
+            cursor: pointer;
        }
         .toggle-switch input {
             display: none;

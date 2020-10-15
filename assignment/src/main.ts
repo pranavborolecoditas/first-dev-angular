@@ -8,8 +8,8 @@ import {CustomButton} from './app/shared/custom-component/custom-button';
 import {ToggleSwitch} from './app/shared/custom-component/toggle-switch';
 
 
-customElements.define('custom-button', CustomButton);
 customElements.define('toggle-switch', ToggleSwitch);
+customElements.define('custom-button', CustomButton);
 
 if (environment.production) {
   enableProdMode();

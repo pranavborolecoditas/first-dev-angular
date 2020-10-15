@@ -1,10 +1,12 @@
 <!-- Toolbar -->
-<div class="toolbar" role="banner">
+<div>
+  <div [ngClass]="{'light-theme':(theme$ | async)==='light','dark-theme':(theme$ | async)==='dark'}" 
+  class="toolbar" role="banner">
     <h2 routerLink="/home">Clothes</h2>
     <div class="spacer"></div>
-    <!-- <toggle-switch stateName="{{theme$|async}}" (my-event)="changeTheme()"></toggle-switch> -->
-    <div *ngIf="isAuthenticated | async;else other_content">
-      <div (click)="onLogout()"><span>Logout</span></div>
+    <toggle-switch stateName="{{theme$ | async}}" (my-event)="onThemeChange()"></toggle-switch>
+    <div *ngIf="isAuthenticated | async; else other_content">
+      <div class="logout-button" (click)="onLogout()"><span>Logout</span></div>
   </div>
 
   <ng-template #other_content><div><span routerLink="/login">Login</span></div></ng-template>
@@ -17,3 +19,4 @@
   </footer>
 </div>
 <router-outlet></router-outlet>
+</div>
